@@ -197,8 +197,7 @@ if __name__ == '__main__':
     print(config.action_dim, config.state_shape)
     agent = CnnDDQNAgent(config)
 
-    # if args.train:
-    if True:
+    if args.train:
         trainer = Trainer(agent, env, config)
         trainer.train()
 
